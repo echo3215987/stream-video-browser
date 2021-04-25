@@ -440,7 +440,7 @@ def detect(DEBUG=False):
                     isAbnormal = True
                     # send the status to DCT server
                     data = {'id':piAddress, 'state':ad.anomaly_type, 'afterStateChangeSec':0, 'videoName':{}}
-                    vindex = ad.vindex + 2
+                    vindex = ad.vindex + 1
                     total_index = min(3, vindex)
                     for i in range(0, total_index):
                         data['videoName'][str(i)] = ad.fname + ('_%d' % (vindex-total_index+i+1))  

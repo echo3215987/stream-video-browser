@@ -537,7 +537,7 @@ class AnomalyDct(object):
         self.writer_inf.append_data(self.image_copy[:,:,::-1])
         if self.fid % self.all_frame_cnt_limit == 0:
             self.vindex += 1
-            self.writer_inf = imageio.get_writer(os.path.join(folder, fname + ('_%d.avi' % self.vindex)), format='avi', mode='I', fps=fps)
+            self.writer_inf = imageio.get_writer(os.path.join(self.d_folder, self.fname + ('_%d.avi' % self.vindex)), format='avi', mode='I', fps=self.fps)
             
     def _save_complete_video(self):
         self.image_copy = self.image.copy()

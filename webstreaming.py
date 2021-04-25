@@ -440,10 +440,10 @@ def detect(DEBUG=False):
                     isAbnormal = True
                     # send the status to DCT server
                     data = {'id':piAddress, 'state':ad.anomaly_type, 'afterStateChangeSec':0, 'videoName':{}}
-                    vindex = ad.vindex + 1
+                    vindex = ad.vindex + 2
                     total_index = min(3, vindex)
                     for i in range(0, total_index):
-                        data['videoName'][str(i)] = ad.fname + ('_%d' % (vindex-total_index+i+1))  
+                        data['videoName'][str(i)] = ad.fname + ('_%d' % (vindex-total_index+i))  
                     postData2DCT(data)
                     ad.writer_inf.close()
 #                     threading.Thread(target=ad.save_test_video, args=(ad.d_folder, ad.all_list, ad.fname, ad.fps)).start()

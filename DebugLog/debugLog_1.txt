@@ -1,0 +1,6 @@
+[2021-04-11 08:30:49] No Internet Connected.
+[2021-04-11 08:30:59] Recheck. No Internet Connected.
+[2021-04-11 08:30:59] Internet has connected.
+[2021-04-11 08:30:59] Server can not be connected!
+[2021-04-11 08:30:59] Start threading service.
+[2021-04-11 08:33:33] DCT server connect timeout 0 seconds

@@ -1,0 +1,5 @@
+[2021-04-11 08:28:26] No Internet Connected.
+[2021-04-11 08:28:36] Recheck. No Internet Connected.
+[2021-04-11 08:28:36] Internet has connected.
+[2021-04-11 08:28:37] Server can not be connected!
+[2021-04-11 08:28:37] Start threading service.

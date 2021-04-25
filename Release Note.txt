@@ -1,0 +1,14 @@
+Release Note of System Status Detection
+
+Version: V1.06
+Date: 2020/11/05
+---------------------------------------------------------------
+Change List:
+1. Status judgement change to RGB value
+2. The timeout of color sensor's interrupt change from 50ms to 160ms
+3. Judgement Threshold: 
+	Black/W and Blue = average +- (30% * average)
+	Black/WO = average +- (average)
+4. Pi reboot after color calibration
+
+---------------------------------------------------------------
